@@ -1,0 +1,377 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "User Login with locked out Credential",
+        "description": "",
+        "id": "login-and-checkout-the-fleece-jacket-in-sauce-portal;user-login-with-locked-out-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12358764800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Login The Application",
+            "match": {
+              "location": "StepDefinition.user_Login_The_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3817620700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user Enter The Locked User Name \"locked_out_user\" In Username Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "locked_out_user",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.user_Enter_The_Locked_User_Name_In_Username_Field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 318610800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user Enter The Password for Locked User \"secret_sauce\" In Password Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.user_Enter_The_Password_for_Locked_User_In_Password_Field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 929453100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user Click The Login Button for Locked User",
+            "match": {
+              "location": "StepDefinition.user_Click_The_Login_Button_for_Locked_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149248200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify The locked_out_user havent logged in successfully",
+            "match": {
+              "location": "StepDefinition.verify_The_locked_out_user_havent_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "User Login with valid Credentials",
+        "description": "",
+        "id": "login-and-checkout-the-fleece-jacket-in-sauce-portal;user-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 219668100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user Enter The Standard User Name \"standard_user\" In Username Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.user_Enter_The_Standard_User_Name_In_Username_Field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165572200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user Enter The Password for Standard User \"secret_sauce\" In Password Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinition.user_Enter_The_Password_for_Standard_User_In_Password_Field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 715802100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user Click The Login Button for Standard User",
+            "match": {
+              "location": "StepDefinition.user_Click_The_Login_Button_for_Standard_User()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 287570600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify The standard_user has logged in successfully",
+            "match": {
+              "location": "StepDefinition.verify_The_standard_user_has_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "User able to add the Fleece Jacket to kart directly from Product",
+        "description": "",
+        "id": "login-and-checkout-the-fleece-jacket-in-sauce-portal;user-able-to-add-the-fleece-jacket-to-kart-directly-from-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 151216400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user add the Fleece Jacket product to Kart by clicking Add To Kart button",
+            "match": {
+              "location": "StepDefinition.user_add_the_Fleece_Jacket_product_to_Kart_by_clicking_Add_To_Kart_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 272574900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user open the Kart by clicking the kart",
+            "match": {
+              "location": "StepDefinition.user_open_the_Kart_by_clicking_the_kart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126661900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Verify The presence of Fleece Jacket product in Kart",
+            "match": {
+              "location": "StepDefinition.verify_The_presence_of_Fleece_Jacket_product_in_Kart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "User able to checkout the item from kart",
+        "description": "",
+        "id": "login-and-checkout-the-fleece-jacket-in-sauce-portal;user-able-to-checkout-the-item-from-kart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 104613200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user click the continue button to checout the product in kart",
+            "match": {
+              "location": "StepDefinition.user_click_the_continue_button_to_checout_the_product_in_kart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 424175900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user Enter The Firstname \"TestFirstName\" In Firstname Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestFirstName",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.user_Enter_The_Firstname_In_Firstname_Field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 273893000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user Enter The Lastname \"TestLastName\" In Lastname Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestLastName",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.user_Enter_The_Lastname_In_Lastname_Field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 220429300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user Enter The Postal code \"123456\" In Postalcode Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.user_Enter_The_Postal_code_In_Postalcode_Field(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 237900900,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user click on the continue button to checkout the product",
+            "match": {
+              "location": "StepDefinition.user_click_on_the_continue_button_to_checkout_the_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127008200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify the presence of checkout product in Checkout Overview",
+            "match": {
+              "location": "StepDefinition.verify_the_presence_of_checkout_product_in_Checkout_Overview()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "User able to place the order successfully",
+        "description": "",
+        "id": "login-and-checkout-the-fleece-jacket-in-sauce-portal;user-able-to-place-the-order-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 156906600,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user click on the Finish button to proceed the checkout",
+            "match": {
+              "location": "StepDefinition.user_click_on_the_Finish_button_to_proceed_the_checkout()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84393700,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Verify The order confirmation",
+            "match": {
+              "location": "StepDefinition.verify_The_order_confirmation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 420130900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Verify The kart quantity",
+            "match": {
+              "location": "StepDefinition.verify_The_kart_quantity()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login And Checkout The Fleece Jacket In Sauce Portal",
+    "description": "",
+    "id": "login-and-checkout-the-fleece-jacket-in-sauce-portal",
+    "keyword": "Feature",
+    "uri": "sauce.feature"
+  }
+]
